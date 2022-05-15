@@ -1,0 +1,53 @@
+body {
+    /* padding-left: 750px;
+    padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    background-image: url(https://a-static.mlcdn.com.br/1500x1500/painel-de-lona-ceu-azul-sol-entre-nuvens-fabrika-de-festa/fabrikadefesta/555131647/070d6d61e9ad5a3ca528d90705f9a90a.jpg);
+    background-size: cover;
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.lux {
+    display: grid;
+    grid-template-areas: 'azul vermelho'
+    'verde roxo';
+    grid-gap: 8px;
+    border: 10px solid rgb(204, 188, 188);
+    background-color: rgb(211, 195, 195);
+    border-radius: 100%;
+    width: 500px;
+    height: 500px;
+}
+.azul{
+    grid-area: azul;
+    background-color: rgb(4, 4, 95);
+    border-top-left-radius: 100%;
+}
+.vermelho{
+    grid-area: vermelho;
+    background-color: rgb(190, 8, 8);
+    border-top-right-radius: 100%;
+}
+.verde{
+    grid-area: verde;
+    background-color: rgb(1, 105, 1);
+    border-bottom-left-radius: 100%;
+}
+.roxo{
+    grid-area: roxo;
+    background-color: rgb(165, 70, 165);
+    border-bottom-right-radius: 100%;
+}
+
+.selected{
+    opacity: 0.4;
+}
